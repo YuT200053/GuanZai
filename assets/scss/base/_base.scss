@@ -1,2 +1,9 @@
-// /////導入字體/////
+// --------導入字體--------
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Serif+TC:wght@500;700&display=swap');
+
+$chinese: 'Noto Serif TC';
+$english: 'Inter';
+
+body {
+    font-family: $chinese , $english, serif;
+}

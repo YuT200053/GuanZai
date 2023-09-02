@@ -5,7 +5,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>index</title>
+    <link
+      rel="stylesheet"
+      href="/dist/assets/styles/core.css?ver=1.4.3"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
   </head>
+  <style>
+    .swiper-wrapper {
+      margin: 0 auto;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+    }
+    .swiper-slide {
+      overflow: hidden;
+      width: 5% !important;
+      transition: width 0.3s;
+      outline: 1px solid black;
+    }
+    .active {
+      width: 50% !important;
+      transition: width 0.3s;
+    }
+  </style>
   <body>
     <%- include('./layout/header'); -%>
 
@@ -32,10 +59,16 @@
         <a class="nav-link disabled">Disabled</a>
       </li>
     </ul>
+    <i class="fa-brands fa-facebook-f fs-1"></i>
     <img src="../assets/images/cat.jpg" style="width: 300px" alt="cat" />
 
     <%- include('./layout/footer'); -%>
 
     <script type="module" src="../main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/e014f97db2.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </body>
 </html>

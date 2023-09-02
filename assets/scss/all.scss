@@ -33,6 +33,7 @@
 @import "../node_modules/bootstrap/scss/forms/form-control";
 @import "../node_modules/bootstrap/scss/nav";
 @import "../node_modules/bootstrap/scss/navbar";
+@import "../node_modules/bootstrap/scss/transitions";
 @import "./components/components";
 
 // 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
@@ -40,6 +41,8 @@
 
 // 8. Add additional custom code here
 
+// --------base--------
+@import './base/base';
 
 @import './layout/header.scss';
 @import './layout/footer.scss';
