@@ -1,0 +1,10 @@
+// /////buttons/////
+.btn-tags {
+    border: 1px solid $black-2;
+    border-radius: 50rem;
+
+    &:hover {
+        background-color: $secondary !important;
+        color: $white !important;
+    }
+}

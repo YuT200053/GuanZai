@@ -10,7 +10,29 @@
     <%- include('./layout/header'); -%>
 
     <h1 class="index-title">我是首頁</h1>
-    <img src="../assets/images/cat.jpg" style="width: 300px;" alt="cat">
+    <input
+      type="checkbox"
+      class="btn-check"
+      id="btn-check"
+      autocomplete="off"
+    />
+
+    <button type="button" class="btn btn-tags">123</button>
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled">Disabled</a>
+      </li>
+    </ul>
+    <img src="../assets/images/cat.jpg" style="width: 300px" alt="cat" />
 
     <%- include('./layout/footer'); -%>
 

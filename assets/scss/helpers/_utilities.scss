@@ -1,0 +1,15 @@
+$utilities: (
+  "font-size": ( // rfs: true,
+    responsive: true,
+    property: font-size,
+    class: fs,
+    values: $font-sizes ),
+  "opacity": (property: opacity,
+    values: (0: 0,
+      20: .2,
+      30:.3,
+      50: .5,
+      70: .7,
+      100: 1,
+    )),
+);
