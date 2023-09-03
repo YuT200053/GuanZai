@@ -1,4 +1,61 @@
-<h1 class="header">我是 header</h1>
-<a href="index.html">index</a>
-<a href="about.html">about</a>
-<a href="contact.html">contact</a>
+<header class="border-bottom border-1 border-black-2">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white-2 py-0">
+    <div
+      class="container-fluid px-12 px-lg-64 py-16 py-lg-24 d-flex justify-content-between"
+    >
+      <!-- --------search-------- -->
+      <button
+        class="navbar-toggler border-0"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#search"
+        aria-controls="search"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <img
+          src="../assets/images/icon/search.png"
+          alt="berger"
+          class="align-self-center"
+        />
+      </button>
+      <!-- --------burger-------- -->
+      <button
+        class="navbar-toggler border-0 burger"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbar"
+        aria-controls="navbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <img src="../assets/images/icon/burger.png" alt="burger" />
+        <img src="../assets/images/icon/close.png" alt="close" class="d-none" />
+      </button>
+      <!-- --------collapse-------- -->
+      <div class="collapse navbar-collapse justify-content-between" id="navbar">
+        <ul class="navbar-nav">
+          <li class="nav-item pe-40">
+            <a href="#" class="nav-link">所有作品</a>
+          </li>
+          <li class="nav-item px-40 position-relative">
+            <a href="#" class="nav-link">熱門排行</a>
+          </li>
+          <li class="nav-item ps-40">
+            <a href="#" class="nav-link">平台推薦</a>
+          </li>
+        </ul>
+        <ul class="list-unstyled mb-0 d-flex">
+          <li class="nav-item me-16">
+            <button type="button" class="btn btn-outline-secondary">
+              登入
+            </button>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-secondary">立即註冊</button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
