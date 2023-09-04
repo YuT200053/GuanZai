@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>about</title>
-    <script type="module" crossorigin src="/GuanZai/assets/main-e32adf70.js"></script>
-    <link rel="stylesheet" href="/GuanZai/assets/main-4c94af0e.css">
+    <script type="module" crossorigin src="/GuanZai/assets/main-1bc6d494.js"></script>
+    <link rel="stylesheet" href="/GuanZai/assets/main-4cf30d12.css">
   </head>
   <body>
     <header class="border-bottom border-1 border-black-2">
@@ -45,6 +45,7 @@
       </button>
       <!-- --------collapse-------- -->
       <div class="collapse navbar-collapse px-16 px-lg-0" id="navbar">
+        <!-- -----list----- -->
         <ul class="navbar-nav pt-56 pt-lg-0 mb-48 mb-lg-0">
           <li class="nav-item pe-lg-40 py-8 py-lg-0">
             <a href="#" class="nav-link">所有作品</a>
@@ -52,10 +53,28 @@
           <li class="nav-item px-lg-40 py-8 py-lg-0 position-relative">
             <a href="#" class="nav-link">熱門排行</a>
           </li>
-          <li class="nav-item ps-lg-40 py-8 py-lg-0">
+          <li class="nav-item ps-lg-40 pe-lg-48 py-8 py-lg-0">
             <a href="#" class="nav-link">平台推薦</a>
           </li>
         </ul>
+        <!-- -----search----- -->
+        <div class="search position-relative">
+          <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIySURBVHgB7ZdPbtNAFMa/caia8EedSEBrsajZQMIqNyA3ID0BZscyN4CeAG6QdMUy6Y4d4QQNK0AscFcUgVovqqobz/TzxI3aSk5iT1I1lX/SZDSeN+Nv3kzmPQMFBQXLjUBGpPQkKhUfSr1k0xvNIkJo/Y11Pzz4McAcmVmg3Kh5rDoU0aC4HdZDlJyh6YyUNM+hfWis8ck2hXZxXcjHz1rSrR9R5HvjwUm2br1Fu99yvf4B1yYufuGTF42Zx3gNSaE9jutgkcTbmlXceOxI5J5cf97GoqC4brytyMl4gVOOhdXksIRe/GizSCe1R4gWfwewRes+f18jJ+kCoZpQYheWmHtRCJl3mycIdDbh6BDzIcDKioccpAvUumomngeaCy2V5uxBoYfc4szXSwpPkXOxd9K7nABCebDEhEit18K/PwPkYNIW93m4X8GeZpxEYBGYS3aj1oQFtnM4U/rfsHTyXhEU9o7VwCYFmygwucN2sbqaOegn4nyWbVgwzYMI/3xvw3H2GfT3kpxwujjXpFq+aUSRVRwuzWJ0evz/c/nBI5fe7JTvP6yVK9X905PDg0uieAzKVfct+z+xWWHZYkLLSCR6tP961X5WMqX8iQd9jmKcFpvMrIPRLEKaonUcGrsXz5xJ1SLVoye3wn+/hshI5m+S8YvjP869u55pRCqkqCDVNhap9BcuoE27HdxEYpHJZ0PuzGbhLI/I0eV9g0WefwoUIi1ZJpEDFBQU3FLOAI1dsWetmIbcAAAAAElFTkSuQmCC"
+            alt="search"
+            class="position-absolute"
+          />
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="搜尋劇名/演員/類別"
+            aria-label="search"
+            aria-describedby="search"
+            class="form-control ps-64 pe-24"
+          />
+        </div>
+        <!-- -----button----- -->
         <ul
           class="list-unstyled mb-0 d-flex flex-column flex-lg-row justify-content-lg-end flex-grow-1"
         >
@@ -70,6 +89,7 @@
             </button>
           </li>
         </ul>
+        <!-- -----copyright----- -->
         <div class="text-center d-block d-lg-none pb-16 mt-295">
           <span class="english fs-13">
             Copyright©2023 GuanZai All Rights Reserved
