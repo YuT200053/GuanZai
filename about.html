@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>about</title>
-    <script type="module" crossorigin src="/GuanZai/assets/main-1bc6d494.js"></script>
-    <link rel="stylesheet" href="/GuanZai/assets/main-4cf30d12.css">
+    <script type="module" crossorigin src="/GuanZai/assets/main-e4f54c80.js"></script>
+    <link rel="stylesheet" href="/GuanZai/assets/main-1263d760.css">
   </head>
   <body>
     <header class="border-bottom border-1 border-black-2">
@@ -14,15 +14,12 @@
     <div
       class="container-fluid px-12 px-lg-64 py-16 py-lg-24 d-flex justify-content-between"
     >
-      <!-- --------search-------- -->
+      <!-- --------search-button-------- -->
       <button
-        class="navbar-toggler border-0"
+        class="navbar-toggler border-0 p-0"
         type="button"
-        data-bs-toggle="collapse"
+        data-bs-toggle="modal"
         data-bs-target="#search"
-        aria-controls="search"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
       >
         <img
           src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIySURBVHgB7ZdPbtNAFMa/caia8EedSEBrsajZQMIqNyA3ID0BZscyN4CeAG6QdMUy6Y4d4QQNK0AscFcUgVovqqobz/TzxI3aSk5iT1I1lX/SZDSeN+Nv3kzmPQMFBQXLjUBGpPQkKhUfSr1k0xvNIkJo/Y11Pzz4McAcmVmg3Kh5rDoU0aC4HdZDlJyh6YyUNM+hfWis8ck2hXZxXcjHz1rSrR9R5HvjwUm2br1Fu99yvf4B1yYufuGTF42Zx3gNSaE9jutgkcTbmlXceOxI5J5cf97GoqC4brytyMl4gVOOhdXksIRe/GizSCe1R4gWfwewRes+f18jJ+kCoZpQYheWmHtRCJl3mycIdDbh6BDzIcDKioccpAvUumomngeaCy2V5uxBoYfc4szXSwpPkXOxd9K7nABCebDEhEit18K/PwPkYNIW93m4X8GeZpxEYBGYS3aj1oQFtnM4U/rfsHTyXhEU9o7VwCYFmygwucN2sbqaOegn4nyWbVgwzYMI/3xvw3H2GfT3kpxwujjXpFq+aUSRVRwuzWJ0evz/c/nBI5fe7JTvP6yVK9X905PDg0uieAzKVfct+z+xWWHZYkLLSCR6tP961X5WMqX8iQd9jmKcFpvMrIPRLEKaonUcGrsXz5xJ1SLVoye3wn+/hshI5m+S8YvjP869u55pRCqkqCDVNhap9BcuoE27HdxEYpHJZ0PuzGbhLI/I0eV9g0WefwoUIi1ZJpEDFBQU3FLOAI1dsWetmIbcAAAAAElFTkSuQmCC"
@@ -30,9 +27,69 @@
           class="align-self-center"
         />
       </button>
+      <!-- --------search-modal-------- -->
+      <div
+        class="modal"
+        id="search"
+        tabindex="-1"
+        aria-labelledby="exampleModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog modal-fullscreen">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body p-12">
+              <div class="mb-64"><!-- -----search----- -->
+<div class="search position-relative">
+  <img
+    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIySURBVHgB7ZdPbtNAFMa/caia8EedSEBrsajZQMIqNyA3ID0BZscyN4CeAG6QdMUy6Y4d4QQNK0AscFcUgVovqqobz/TzxI3aSk5iT1I1lX/SZDSeN+Nv3kzmPQMFBQXLjUBGpPQkKhUfSr1k0xvNIkJo/Y11Pzz4McAcmVmg3Kh5rDoU0aC4HdZDlJyh6YyUNM+hfWis8ck2hXZxXcjHz1rSrR9R5HvjwUm2br1Fu99yvf4B1yYufuGTF42Zx3gNSaE9jutgkcTbmlXceOxI5J5cf97GoqC4brytyMl4gVOOhdXksIRe/GizSCe1R4gWfwewRes+f18jJ+kCoZpQYheWmHtRCJl3mycIdDbh6BDzIcDKioccpAvUumomngeaCy2V5uxBoYfc4szXSwpPkXOxd9K7nABCebDEhEit18K/PwPkYNIW93m4X8GeZpxEYBGYS3aj1oQFtnM4U/rfsHTyXhEU9o7VwCYFmygwucN2sbqaOegn4nyWbVgwzYMI/3xvw3H2GfT3kpxwujjXpFq+aUSRVRwuzWJ0evz/c/nBI5fe7JTvP6yVK9X905PDg0uieAzKVfct+z+xWWHZYkLLSCR6tP961X5WMqX8iQd9jmKcFpvMrIPRLEKaonUcGrsXz5xJ1SLVoye3wn+/hshI5m+S8YvjP869u55pRCqkqCDVNhap9BcuoE27HdxEYpHJZ0PuzGbhLI/I0eV9g0WefwoUIi1ZJpEDFBQU3FLOAI1dsWetmIbcAAAAAElFTkSuQmCC"
+    alt="search"
+    class="position-absolute translate-middle-y top-50 start-24"
+  />
+  <input
+    type="text"
+    name="search"
+    id="search"
+    placeholder="搜尋劇名/演員/類別"
+    aria-label="search"
+    aria-describedby="search"
+    class="form-control ps-64 pe-24"
+  />
+</div>
+</div>
+              <span class="text-black-5 text-opacity-50 fs-12">熱門標籤</span>
+              <ul class="list-unstyled">
+                <li class="btn-tags">瑯琊榜</li>
+                <li class="btn-tags">#宮鬥</li>
+                <li class="btn-tags">虐戀</li>
+                <li class="btn-tags">長歌行</li>
+                <li class="btn-tags">陳情令</li>
+                <li class="btn-tags">羅雲熙</li>
+                <li class="btn-tags">飛流</li>
+                <li class="btn-tags">長月燼明</li>
+                <li class="btn-tags">胡歌</li>
+                <li class="btn-tags">吳磊</li>
+                <li class="btn-tags">星漢燦爛</li>
+                <li class="btn-tags">後宮甄嬛傳</li>
+                <li class="btn-tags">#愛情</li>
+                <li class="btn-tags">白鹿</li>
+                <li class="btn-tags">#權謀</li>
+                <li class="btn-tags">王凱</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
       <!-- --------burger-------- -->
       <button
-        class="navbar-toggler border-0 burger"
+        class="navbar-toggler border-0 burger p-0"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#navbar"
@@ -57,23 +114,25 @@
             <a href="#" class="nav-link">平台推薦</a>
           </li>
         </ul>
-        <!-- -----search----- -->
-        <div class="search position-relative">
-          <img
-            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIySURBVHgB7ZdPbtNAFMa/caia8EedSEBrsajZQMIqNyA3ID0BZscyN4CeAG6QdMUy6Y4d4QQNK0AscFcUgVovqqobz/TzxI3aSk5iT1I1lX/SZDSeN+Nv3kzmPQMFBQXLjUBGpPQkKhUfSr1k0xvNIkJo/Y11Pzz4McAcmVmg3Kh5rDoU0aC4HdZDlJyh6YyUNM+hfWis8ck2hXZxXcjHz1rSrR9R5HvjwUm2br1Fu99yvf4B1yYufuGTF42Zx3gNSaE9jutgkcTbmlXceOxI5J5cf97GoqC4brytyMl4gVOOhdXksIRe/GizSCe1R4gWfwewRes+f18jJ+kCoZpQYheWmHtRCJl3mycIdDbh6BDzIcDKioccpAvUumomngeaCy2V5uxBoYfc4szXSwpPkXOxd9K7nABCebDEhEit18K/PwPkYNIW93m4X8GeZpxEYBGYS3aj1oQFtnM4U/rfsHTyXhEU9o7VwCYFmygwucN2sbqaOegn4nyWbVgwzYMI/3xvw3H2GfT3kpxwujjXpFq+aUSRVRwuzWJ0evz/c/nBI5fe7JTvP6yVK9X905PDg0uieAzKVfct+z+xWWHZYkLLSCR6tP961X5WMqX8iQd9jmKcFpvMrIPRLEKaonUcGrsXz5xJ1SLVoye3wn+/hshI5m+S8YvjP869u55pRCqkqCDVNhap9BcuoE27HdxEYpHJZ0PuzGbhLI/I0eV9g0WefwoUIi1ZJpEDFBQU3FLOAI1dsWetmIbcAAAAAElFTkSuQmCC"
-            alt="search"
-            class="position-absolute"
-          />
-          <input
-            type="text"
-            name="search"
-            id="search"
-            placeholder="搜尋劇名/演員/類別"
-            aria-label="search"
-            aria-describedby="search"
-            class="form-control ps-64 pe-24"
-          />
-        </div>
+        <!-- --------search-------- -->
+        <div class="d-none d-lg-block"><!-- -----search----- -->
+<div class="search position-relative">
+  <img
+    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIySURBVHgB7ZdPbtNAFMa/caia8EedSEBrsajZQMIqNyA3ID0BZscyN4CeAG6QdMUy6Y4d4QQNK0AscFcUgVovqqobz/TzxI3aSk5iT1I1lX/SZDSeN+Nv3kzmPQMFBQXLjUBGpPQkKhUfSr1k0xvNIkJo/Y11Pzz4McAcmVmg3Kh5rDoU0aC4HdZDlJyh6YyUNM+hfWis8ck2hXZxXcjHz1rSrR9R5HvjwUm2br1Fu99yvf4B1yYufuGTF42Zx3gNSaE9jutgkcTbmlXceOxI5J5cf97GoqC4brytyMl4gVOOhdXksIRe/GizSCe1R4gWfwewRes+f18jJ+kCoZpQYheWmHtRCJl3mycIdDbh6BDzIcDKioccpAvUumomngeaCy2V5uxBoYfc4szXSwpPkXOxd9K7nABCebDEhEit18K/PwPkYNIW93m4X8GeZpxEYBGYS3aj1oQFtnM4U/rfsHTyXhEU9o7VwCYFmygwucN2sbqaOegn4nyWbVgwzYMI/3xvw3H2GfT3kpxwujjXpFq+aUSRVRwuzWJ0evz/c/nBI5fe7JTvP6yVK9X905PDg0uieAzKVfct+z+xWWHZYkLLSCR6tP961X5WMqX8iQd9jmKcFpvMrIPRLEKaonUcGrsXz5xJ1SLVoye3wn+/hshI5m+S8YvjP869u55pRCqkqCDVNhap9BcuoE27HdxEYpHJZ0PuzGbhLI/I0eV9g0WefwoUIi1ZJpEDFBQU3FLOAI1dsWetmIbcAAAAAElFTkSuQmCC"
+    alt="search"
+    class="position-absolute translate-middle-y top-50 start-24"
+  />
+  <input
+    type="text"
+    name="search"
+    id="search"
+    placeholder="搜尋劇名/演員/類別"
+    aria-label="search"
+    aria-describedby="search"
+    class="form-control ps-64 pe-24"
+  />
+</div>
+</div>
         <!-- -----button----- -->
         <ul
           class="list-unstyled mb-0 d-flex flex-column flex-lg-row justify-content-lg-end flex-grow-1"
