@@ -1,3 +1,8 @@
+// --------transition--------
+@mixin zoom($times) {
+    transition: ease-in-out $times;
+}
+
 // ----------breakpoints--------
 @mixin sm {
     @media (min-width:576px) {
@@ -27,9 +32,4 @@
     @media (min-width:1400px) {
         @content
     }
-}
-
-// --------transition--------
-@mixin zoom($times) {
-    transition: ease-in-out $times;
 }

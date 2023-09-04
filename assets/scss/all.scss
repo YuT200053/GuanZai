@@ -24,9 +24,10 @@
 @import "../node_modules/bootstrap/scss/containers";
 @import "../node_modules/bootstrap/scss/grid";
 @import "../node_modules/bootstrap/scss/helpers";
-// @import "../node_modules/bootstrap/scss/forms/form-check";
 
-// /////other//////
+// --------other--------
+// --------helpers--------
+@import './helpers/mixin'; //自定義mixin
 @import "./mixin/buttons";
 @import "../node_modules/bootstrap/scss/buttons";
 @import "../node_modules/bootstrap/scss/forms/form-check";
@@ -46,9 +47,6 @@
 
 // --------base--------
 @import './base/base';
-
-// --------helpers--------
-@import './helpers/mixin';
 
 // --------layout--------
 @import './layout/header.scss';
