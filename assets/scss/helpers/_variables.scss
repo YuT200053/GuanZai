@@ -430,6 +430,7 @@ $spacers: (
   12: $spacer * .75,
   16: $spacer,
   24: $spacer * 1.5,
+  32: $spacer * 2,
   40: $spacer * 2.5,
   48: $spacer * 3,
   56: $spacer * 3.5,
@@ -472,9 +473,9 @@ $body-emphasis-color: $black !default;
 // Style anchor elements.
 
 $link-color: $secondary !default; //$primary ,customize
-$link-decoration: underline !default;
+$link-decoration: none !default; //underline ,customize
 $link-shade-percentage: 20% !default;
-$link-hover-color: shift-color($link-color, $link-shade-percentage) !default;
+$link-hover-color: $primary !default; //shift-color($link-color, $link-shade-percentage) 
 $link-hover-decoration: null !default;
 
 $stretched-link-pseudo-element: after !default;

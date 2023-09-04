@@ -29,6 +29,7 @@
 // --------helpers--------
 @import './helpers/mixin'; //自定義mixin
 @import "./mixin/buttons";
+@import "./mixin/colored-links";
 @import "../node_modules/bootstrap/scss/buttons";
 @import "../node_modules/bootstrap/scss/forms/form-check";
 @import "../node_modules/bootstrap/scss/forms/form-control";
