@@ -446,6 +446,7 @@ $spacers: (
 // scss-docs-start position-map
 $position-values: (
   0: 0,
+  24:24px,
   50: 50%,
   100: 100%) !default;
 // scss-docs-end position-map
@@ -1033,7 +1034,7 @@ $input-group-addon-padding-y: $input-padding-y !default;
 $input-group-addon-padding-x: $input-padding-x !default;
 $input-group-addon-font-weight: $input-font-weight !default;
 $input-group-addon-color: $input-color !default;
-$input-group-addon-bg: var(--#{$prefix}tertiary-bg) !default;
+$input-group-addon-bg: transparent !default; //(--#{$prefix}tertiary-bg) ,customize
 $input-group-addon-border-color: $input-border-color !default;
 // scss-docs-end input-group-variables
 
@@ -1566,7 +1567,7 @@ $modal-backdrop-bg: $black !default;
 $modal-backdrop-opacity: .5 !default;
 
 $modal-header-border-color: var(--#{$prefix}border-color) !default;
-$modal-header-border-width: $modal-content-border-width !default;
+$modal-header-border-width: 0px !default; //$modal-content-border-width ,customize
 $modal-header-padding-y: $modal-inner-padding !default;
 $modal-header-padding-x: $modal-inner-padding !default;
 $modal-header-padding: $modal-header-padding-y $modal-header-padding-x !default; // Keep this for backwards compatibility
@@ -1582,7 +1583,7 @@ $modal-xl: 1140px !default;
 
 $modal-fade-transform: translate(0, -50px) !default;
 $modal-show-transform: none !default;
-$modal-transition: transform .3s ease-out !default;
+$modal-transition: transform .3s ease-in-out !default;
 $modal-scale-transform: scale(1.02) !default;
 // scss-docs-end modal-variables
 
@@ -1747,12 +1748,12 @@ $spinner-border-width-sm: .2em !default;
 // Close
 
 // scss-docs-start close-variables
-$btn-close-width: 1em !default;
+$btn-close-width: 2.5em !default;
 $btn-close-height: $btn-close-width !default;
 $btn-close-padding-x: .25em !default;
 $btn-close-padding-y: $btn-close-padding-x !default;
 $btn-close-color: $black !default;
-$btn-close-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$btn-close-color}'><path d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/></svg>") !default;
+$btn-close-bg: url("/assets/images/icon/close.png") !default; //customize
 $btn-close-focus-shadow: $focus-ring-box-shadow !default;
 $btn-close-opacity: .5 !default;
 $btn-close-hover-opacity: .75 !default;

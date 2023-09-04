@@ -1,7 +1,13 @@
 // --------buttons--------
 .btn-tags {
     border: 1px solid $black-2;
-    border-radius: 50rem;
+    border-radius: 96px;
+    padding: 12px;
+    font-size: 12px;
+    display: inline-block;
+    margin-right: 4px;
+    margin-bottom: 4px;
+    line-height: 1.2;
 
     &:hover {
         background-color: $secondary !important;
