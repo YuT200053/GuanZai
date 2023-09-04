@@ -34,6 +34,7 @@
       </button>
       <!-- --------collapse-------- -->
       <div class="collapse navbar-collapse px-16 px-lg-0" id="navbar">
+        <!-- -----list----- -->
         <ul class="navbar-nav pt-56 pt-lg-0 mb-48 mb-lg-0">
           <li class="nav-item pe-lg-40 py-8 py-lg-0">
             <a href="#" class="nav-link">所有作品</a>
@@ -41,10 +42,28 @@
           <li class="nav-item px-lg-40 py-8 py-lg-0 position-relative">
             <a href="#" class="nav-link">熱門排行</a>
           </li>
-          <li class="nav-item ps-lg-40 py-8 py-lg-0">
+          <li class="nav-item ps-lg-40 pe-lg-48 py-8 py-lg-0">
             <a href="#" class="nav-link">平台推薦</a>
           </li>
         </ul>
+        <!-- -----search----- -->
+        <div class="search position-relative">
+          <img
+            src="../assets/images/icon/search.png"
+            alt="search"
+            class="position-absolute"
+          />
+          <input
+            type="text"
+            name="search"
+            id="search"
+            placeholder="搜尋劇名/演員/類別"
+            aria-label="search"
+            aria-describedby="search"
+            class="form-control ps-64 pe-24"
+          />
+        </div>
+        <!-- -----button----- -->
         <ul
           class="list-unstyled mb-0 d-flex flex-column flex-lg-row justify-content-lg-end flex-grow-1"
         >
@@ -59,6 +78,7 @@
             </button>
           </li>
         </ul>
+        <!-- -----copyright----- -->
         <div class="text-center d-block d-lg-none pb-16 mt-295">
           <span class="english fs-13">
             Copyright©2023 GuanZai All Rights Reserved
