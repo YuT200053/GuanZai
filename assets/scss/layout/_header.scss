@@ -58,12 +58,6 @@
 
     // -----search-----
     .search {
-      display: none;
-
-      @include lg() {
-        display: block;
-      }
-
       input {
         width: 150px;
 
@@ -82,6 +76,5 @@
         top: 50%;
       }
     }
-
   }
 }
