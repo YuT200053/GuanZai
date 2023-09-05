@@ -9,11 +9,21 @@
     margin-bottom: 4px;
     line-height: 1.2;
     background-color: $white-3;
-
     @include zoom(0.2s);
 
     &:hover {
         background-color: $secondary !important;
         color: $white !important;
+    }
+}
+
+.btn-social {
+    background-color: $gold-3;
+    padding: 12px;
+    color: $white;
+    @include zoom(0.2s);
+
+    &:hover {
+        background-color: $primary;
     }
 }
