@@ -1,4 +1,9 @@
 // --------buttons--------
+.btn-square {
+    padding: 12px;
+    line-height: 1;
+}
+
 .btn-tags {
     border: 1px solid $black-2;
     border-radius: 96px;
@@ -19,7 +24,6 @@
 
 .btn-social {
     background-color: $gold-3;
-    padding: 12px;
     color: $white;
     @include zoom(0.2s);
 
