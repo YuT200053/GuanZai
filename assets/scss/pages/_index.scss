@@ -8,10 +8,25 @@
   }
 }
 
-// -----page-----
+// -----pagination-----
 .page {
   button {
     width: 80px;
     height: 80px;
+  }
+}
+
+// -----marquee-----
+.marquee {
+  .swiper {
+    &-wrapper {
+      transition-timing-function: linear;
+    }
+
+    &-slide {
+      padding-top: 16px;
+      padding-bottom: 16px;
+      width: auto;
+    }
   }
 }

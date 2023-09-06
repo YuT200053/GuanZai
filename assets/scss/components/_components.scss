@@ -31,3 +31,30 @@
         background-color: $primary;
     }
 }
+
+// -----border-----
+.border-cos {
+    border-radius: 16px 16px 16px 0;
+}
+
+// -----other-----
+.comment {
+    background-color: $secondary;
+    color: $white;
+    width: 100%;
+    top: 0;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    @include lg() {
+        height: 100%;
+        width: auto;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+}

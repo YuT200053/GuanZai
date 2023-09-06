@@ -119,7 +119,7 @@ $utilities: map-merge(( // scss-docs-start utils-vertical-align
       // customize
       "border-color": (property: border-color,
         class: border,
-        local-vars: ("border-opacity": 1),
+        //local-vars: ("border-opacity": 1),
         values: map-merge($theme-colors, ("white": $white)), //$utilities-border-colors 
       ),
       "subtle-border-color": (property: border-color,
@@ -133,6 +133,7 @@ $utilities: map-merge(( // scss-docs-start utils-vertical-align
         values: (10: .1,
           25: .25,
           50: .5,
+          70: .7, //customize
           75: .75,
           100: 1)),
       // scss-docs-end utils-borders
