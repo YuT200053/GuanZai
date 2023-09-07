@@ -15,7 +15,7 @@ footer {
     }
   }
 
-  li:nth-child(2n)::before {
+  .list:nth-child(2n)::before {
     content: "";
     position: absolute;
     z-index: -1;
