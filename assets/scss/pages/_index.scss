@@ -44,6 +44,7 @@
     object-fit: cover;
     object-position: center center;
     width: 112px !important;
+    // width: 6% !important;
     height: 608px;
 
     img {
@@ -55,5 +56,6 @@
 
   .swiper-slide-active {
     width: 1296px !important;
+    // width: 65% !important;
   }
 }
