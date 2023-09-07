@@ -487,6 +487,12 @@
           <div class="swiper-slide">
             <img src="/GuanZai/assets/瑯琊榜-a3d8d3f1.png" alt="瑯琊榜" />
           </div>
+          <div class="swiper-slide">
+            <img src="/GuanZai/assets/星漢燦爛-96dba728.png" alt="星漢燦爛" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/GuanZai/assets/瑯琊榜-a3d8d3f1.png" alt="瑯琊榜" />
+          </div>
         </div>
       </div>
     </div>
@@ -597,7 +603,7 @@
     <!-- -----swiper----- -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- -----swiper-marquee----- -->
-    <script>
+    <!-- <script>
       var swiper = new Swiper(".marquee", {
         spaceBetween: 48,
         allowTouchMove: false,
@@ -607,6 +613,49 @@
         autoplay: {
           delay: 0,
           disableOnInteraction: false,
+        },
+      });
+    </script> -->
+    <script>
+      function initMarquee(swiper) {
+        var marquee =
+          swiper.slides[swiper.activeIndex].querySelector(".marquee");
+        if (marquee.swiper) {
+          marquee.swiper.destroy();
+        }
+
+        var swiper = new Swiper(marquee, {
+          spaceBetween: 48,
+          allowTouchMove: false,
+          slidesPerView: "auto",
+          speed: 30000,
+          loop: true,
+          autoplay: {
+            delay: 0,
+            disableOnInteraction: false,
+          },
+        });
+      }
+      var swiper2 = new Swiper(".banner-comment", {
+        spaceBetween: 16,
+        loop: true,
+        allowTouchMove: false,
+        slidesPerView: "auto",
+        navigation: {
+          nextEl: ".page-next",
+          prevEl: ".page-pre",
+        },
+        autoplay: {
+          delay: 8000,
+          disableOnInteraction: false,
+        },
+        on: {
+          init: function () {
+            initMarquee(this);
+          },
+          slideChangeTransitionEnd: function () {
+            initMarquee(this);
+          },
         },
       });
     </script>
@@ -630,12 +679,20 @@
     <!-- -----swiper-banner----- -->
     <script>
       var swiper = new Swiper(".banner", {
-        slidesPerView: 7,
-        spaceBetween: 16,
-        centeredSlides: true,
+        // slidesPerView: 7,
+        // spaceBetween: 16,
+        // centeredSlides: true,
+        // loop: true,
+        // loopedSlides: 3,
+        // allowTouchMove: false,
+        spaceBetween: 20, // 間距
+        centeredSlides: true, // active 置中
+        autoplay: {
+          delay: 1000,
+        },
+        slidesPerView: 7, // 顯示數量
         loop: true,
-        loopedSlides: 3,
-        allowTouchMove: false,
+        loopedSlides: 3, // 設定在循環滑動中顯示的幻燈片數量(左右的數量)
         navigation: {
           nextEl: ".page-next",
           prevEl: ".page-pre",
