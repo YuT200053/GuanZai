@@ -18,7 +18,7 @@
   <body>
     <%- include('./layout/header'); -%>
     <!-- -----banner----- -->
-    <div class="container pt-48 pt-lg-64">
+    <div class="container pt-112 pt-lg-168">
       <!-- -----logo & pagination----- -->
       <div class="d-flex justify-content-between mb-48 mb-lg-80">
         <img
@@ -344,6 +344,24 @@
         </div>
       </div>
     </div>
+    <!-- -----about----- -->
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <h2 class="mb-48">
+            <p class="fw-bold fs-26 mb-8">關於我們</p>
+            <p class="english fs-13 mb-0">Guan Yú Wǒ Mẹn</p>
+          </h2>
+          <h3 class="fw-bold fs-56">
+            穿越時空，<br />探尋<span class="text-primary"
+              >最完整的<br />古裝劇資訊</span
+            >
+          </h3>
+        </div>
+        <div class="col-4"></div>
+        <div class="col-4"></div>
+      </div>
+    </div>
 
     <%- include('./layout/footer'); -%>
 
@@ -450,9 +468,9 @@
         autoplay: {
           delay: 1000,
         },
-        slidesPerView: 7, // 顯示數量
+        slidesPerView: 3, // 顯示數量
         loop: true,
-        loopedSlides: 3, // 設定在循環滑動中顯示的幻燈片數量(左右的數量)
+        loopedSlides: 1, // 設定在循環滑動中顯示的幻燈片數量(左右的數量)
         navigation: {
           nextEl: ".page-next",
           prevEl: ".page-pre",

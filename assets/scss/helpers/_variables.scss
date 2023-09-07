@@ -437,9 +437,11 @@ $spacers: (
   56: $spacer * 3.5,
   64: $spacer * 4,
   80: $spacer * 5,
+  112 : $spacer * 7,
   140: $spacer * 8.75,
   160: $spacer * 10,
-  295:295px,
+  168: $spacer * 10.5,
+  295: 295px,
   ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -693,7 +695,9 @@ $font-sizes: (
   15: 15px,
   20: $font-size-base * 1.25,
   24: $font-size-base * 1.5,
+  26: 26px,
   32: $font-size-base * 2,
+  56: $font-size-base * 3.5,
   ) !default;
 // scss-docs-end font-sizes
 
