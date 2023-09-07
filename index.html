@@ -14,11 +14,13 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <script type="module" crossorigin src="/GuanZai/assets/main-a549a488.js"></script>
-    <link rel="stylesheet" href="/GuanZai/assets/main-57e2d649.css">
+    <script type="module" crossorigin src="/GuanZai/assets/main-79261a10.js"></script>
+    <link rel="stylesheet" href="/GuanZai/assets/main-98aead20.css">
   </head>
   <body>
-    <header class="border-bottom border-1 border-black-2">
+    <header
+  class="bg-white bg-opacity-75 border-bottom border-1 border-black-2 fixed-top"
+>
   <nav class="navbar navbar-expand-lg navbar-light bg-white-2 py-0">
     <div
       class="container-fluid px-12 px-lg-64 py-16 py-lg-24 d-flex justify-content-between"
@@ -170,7 +172,7 @@
   </nav>
 </header>
     <!-- -----banner----- -->
-    <div class="container pt-48 pt-lg-64">
+    <div class="container pt-112 pt-lg-168">
       <!-- -----logo & pagination----- -->
       <div class="d-flex justify-content-between mb-48 mb-lg-80">
         <img
@@ -496,6 +498,24 @@
         </div>
       </div>
     </div>
+    <!-- -----about----- -->
+    <div class="container">
+      <div class="row">
+        <div class="col-4">
+          <h2 class="mb-48">
+            <p class="fw-bold fs-26 mb-8">關於我們</p>
+            <p class="english fs-13 mb-0">Guan Yú Wǒ Mẹn</p>
+          </h2>
+          <h3 class="fw-bold fs-56">
+            穿越時空，<br />探尋<span class="text-primary"
+              >最完整的<br />古裝劇資訊</span
+            >
+          </h3>
+        </div>
+        <div class="col-4"></div>
+        <div class="col-4"></div>
+      </div>
+    </div>
 
     <!-- -----footer----- -->
 <footer
@@ -690,9 +710,9 @@
         autoplay: {
           delay: 1000,
         },
-        slidesPerView: 7, // 顯示數量
+        slidesPerView: 3, // 顯示數量
         loop: true,
-        loopedSlides: 3, // 設定在循環滑動中顯示的幻燈片數量(左右的數量)
+        loopedSlides: 1, // 設定在循環滑動中顯示的幻燈片數量(左右的數量)
         navigation: {
           nextEl: ".page-next",
           prevEl: ".page-pre",
