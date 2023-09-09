@@ -1,6 +1,6 @@
 // --------buttons--------
 .btn-square {
-    padding: 12px;
+    padding: 12px !important;
     line-height: 1;
 }
 
@@ -63,32 +63,22 @@
 }
 
 .btn-heart {
-    width: 56px;
-    height: 56px;
-    background-color: $gold-3;
-    color: $white;
-    @include zoom(0.2s);
+    width: 32px;
+    height: 32px;
 
-    .heart {
-        display: block;
-
-        &:hover {
-            display: block;
-        }
-
-        &-h {
-            display: none;
-
-            &:hover {
-                display: block;
-            }
-        }
+    @include lg() {
+        width: 56px;
+        height: 56px;
     }
+}
 
-    i {
-        font-size: 24px;
-        padding-right: 4px;
-        padding-left: 4px;
+.heart {
+    font-size: 32px;
+    padding-bottom: 0;
+
+    &-h {
+        font-size: 32px;
+        display: none;
     }
 }
 
