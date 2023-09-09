@@ -415,6 +415,7 @@ $utilities: map-merge(( // scss-docs-start utils-vertical-align
         class: text-opacity,
         values: (25: .25,
           50: .5,
+          70: .7, //customize
           75: .75,
           100: 1)),
       "text-color": (property: color,

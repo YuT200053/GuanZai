@@ -32,6 +32,16 @@
     }
 }
 
+.btn-heart {
+    background-color: $gold-3;
+    color: $white;
+    @include zoom(0.2s);
+
+    &:hover {
+        background-color: $primary;
+    }
+}
+
 // -----border-----
 .border-cos {
     border-radius: 16px 16px 16px 0;
