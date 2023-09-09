@@ -27,18 +27,68 @@
     color: $white;
     @include zoom(0.2s);
 
+    .ig,
+    .fb,
+    .mail {
+        width: 32px;
+        height: 32px;
+        display: block;
+        @include zoom(0.2s);
+    }
+
+    .ig-h,
+    .fb-h,
+    .mail-h {
+        width: 32px;
+        height: 32px;
+        display: none;
+        @include zoom(0.2s);
+    }
+
     &:hover {
         background-color: $primary;
+
+        .ig,
+        .fb,
+        .mail {
+            display: none;
+        }
+
+        .ig-h,
+        .fb-h,
+        .mail-h {
+            display: block;
+        }
     }
 }
 
 .btn-heart {
+    width: 56px;
+    height: 56px;
     background-color: $gold-3;
     color: $white;
     @include zoom(0.2s);
 
-    &:hover {
-        background-color: $primary;
+    .heart {
+        display: block;
+
+        &:hover {
+            display: block;
+        }
+
+        &-h {
+            display: none;
+
+            &:hover {
+                display: block;
+            }
+        }
+    }
+
+    i {
+        font-size: 24px;
+        padding-right: 4px;
+        padding-left: 4px;
     }
 }
 
