@@ -77,6 +77,9 @@
   flex: 1 1 auto;
   padding: var(--#{$prefix}card-spacer-y) var(--#{$prefix}card-spacer-x);
   color: var(--#{$prefix}card-color);
+  // costumize
+  display: flex;
+  flex-direction: column;
 }
 
 .card-title {
