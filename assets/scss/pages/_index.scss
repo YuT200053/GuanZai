@@ -135,6 +135,7 @@
     }
   }
 
+  // -----最多顯示兩行介紹-----
   .card-text {
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -143,6 +144,7 @@
     text-overflow: ellipsis;
   }
 
+  // -----最多顯示兩行tag-----
   .card-link {
     max-height: 70px;
     overflow: hidden;

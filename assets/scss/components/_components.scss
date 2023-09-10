@@ -88,6 +88,17 @@
     border-radius: 16px 16px 16px 0;
 }
 
+// -----new tag-----
+.new {
+    background-color: $primary;
+    color: $white;
+    font-family: $english, serif;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 16px 16px 16px 0;
+    padding: 8px 24px;
+}
+
 // -----other-----
 .comment {
     background-color: $secondary;

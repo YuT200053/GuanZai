@@ -453,8 +453,11 @@ $spacers: (
 // scss-docs-start position-map
 $position-values: (
   0: 0,
-  24:24px,
+  24: 24px,
+  //customize
   50: 50%,
+  85: 85%,
+  //customize
   100: 100%) !default;
 // scss-docs-end position-map
 
