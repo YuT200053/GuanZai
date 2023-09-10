@@ -14,8 +14,8 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <script type="module" crossorigin src="/GuanZai/assets/main-9acabc5d.js"></script>
-    <link rel="stylesheet" href="/GuanZai/assets/main-c4d86fc0.css">
+    <script type="module" crossorigin src="/GuanZai/assets/main-4d12da5c.js"></script>
+    <link rel="stylesheet" href="/GuanZai/assets/main-f6b37aa9.css">
   </head>
   <body>
     <header
@@ -514,7 +514,7 @@
             </h3>
           </div>
           <div class="col-12 col-lg-8">
-            <ul class="row list-unstyled gx-32">
+            <ul class="row list-unstyled gx-16 gx-lg-24">
               <li class="col-6 mb-40 mb-lg-64">
                 <div class="img-box mb-16 mb-lg-24">
                   <img
@@ -631,71 +631,282 @@
     </div>
     <!-- -----latest----- -->
     <div class="latest position-relative">
-      <div class="container pt-160">
+      <div class="container pt-80 pt-lg-160">
         <h2 class="mb-40 mb-lg-56 text-center text-lg-start">
           <p class="fs-40 fs-lg-56 fw-bold mb-8">最新開播</p>
           <p class="english fs-20 fs-lg-26 mb-0">Zueì Sin Kai Bò</p>
         </h2>
-        <div class="row justify-content-end mb-100 d-none d-lg-flex mt-140">
+        <!-- -----latest-banner----- -->
+        <div
+          class="row justify-content-end mb-100 d-none d-lg-flex mt-140 mb-100"
+        >
           <div class="col-4">
             <div class="card bg-white p-32">
-              <div class="mb-40">
-                <i class="bi bi-star-fill text-primary me-4"></i>
-                <span
-                  class="english fs-15 fw-bold border-end border-white-3 pe-8 me-8"
-                >
-                  4.9
-                </span>
-              </div>
-              <h3 class="fs-36 fw-bold">長月燼明</h3>
-              <div class="my-16 fs-12">
-                <a href="#" class="btn-tags">#劇情</a>
-                <a href="#" class="btn-tags">#愛情</a>
-                <a href="#" class="btn-tags">#奇幻</a>
-                <a href="#" class="btn-tags">#仙俠</a>
-                <a href="#" class="btn-tags">#虐戀</a>
-                <a href="#" class="btn-tags">羅云熙</a>
-                <a href="#" class="btn-tags">白鹿</a>
-                <a href="#" class="btn-tags">陳都靈</a>
-                <a href="#" class="btn-tags">鄧為</a>
-              </div>
-              <p class="fs-15 text-secondary text-opacity-70">
-                為了解救被魔神澹台燼（羅云熙
-                飾）統治折磨的世界，衡陽宗掌門之女黎蘇蘇（白鹿
-                飾）孤注一擲，回到五百年前，化身葉家小女兒葉夕霧，阻止彼時尚未被邪念徹底侵蝕的景國質子澹台燼成為魔神。
-              </p>
-              <div class="d-flex mt-40">
-                <a
-                  href="#"
-                  class="btn btn-outline-secondary d-flex justify-content-center align-items-center w-100 me-16 p-0"
-                >
-                  <span class="lh-xl">更多資訊</span
-                  ><i class="bi bi-arrow-right ms-8 fs-24"></i>
-                </a>
-                <input
-                  type="checkbox"
-                  class="btn-check"
-                  id="btn-check"
-                  autocomplete="off"
-                />
-                <label
-                  class="btn btn-gold-3 btn-square btn-heart border-0"
-                  for="btn-check"
-                >
-                  <span class="material-icons heart"> favorite_border </span>
-                  <span class="material-icons heart-h"> favorite </span>
-                </label>
+              <div class="card-body">
+                <div class="mb-40 english fs-15 fw-bold">
+                  <i class="bi bi-star-fill text-primary me-4"></i>
+                  <span class="border-end border-black-2 pe-8 me-8"> 4.9 </span
+                  >2023
+                </div>
+                <h3 class="card-title fs-36 fw-bold">長月燼明</h3>
+                <div class="my-16 fs-12">
+                  <a href="#" class="btn-tags">#劇情</a>
+                  <a href="#" class="btn-tags">#愛情</a>
+                  <a href="#" class="btn-tags">#奇幻</a>
+                  <a href="#" class="btn-tags">#仙俠</a>
+                  <a href="#" class="btn-tags">#虐戀</a>
+                  <a href="#" class="btn-tags">羅云熙</a>
+                  <a href="#" class="btn-tags">白鹿</a>
+                  <a href="#" class="btn-tags">陳都靈</a>
+                  <a href="#" class="btn-tags">鄧為</a>
+                </div>
+                <p class="card-text fs-15 text-secondary text-opacity-70">
+                  為了解救被魔神澹台燼（羅云熙
+                  飾）統治折磨的世界，衡陽宗掌門之女黎蘇蘇（白鹿
+                  飾）孤注一擲，回到五百年前，化身葉家小女兒葉夕霧，阻止彼時尚未被邪念徹底侵蝕的景國質子澹台燼成為魔神。
+                </p>
+                <div class="d-flex mt-40">
+                  <a
+                    href="#"
+                    class="btn btn-outline-secondary d-flex justify-content-center align-items-center w-100 me-16 p-0"
+                  >
+                    <span class="lh-xl">更多資訊</span
+                    ><i class="bi bi-arrow-right ms-8 fs-24"></i>
+                  </a>
+                  <input
+                    type="checkbox"
+                    class="btn-check"
+                    id="latest-like-1"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="btn btn-gold-3 btn-square btn-heart border-0"
+                    for="latest-like-1"
+                  >
+                    <span class="material-icons heart"> favorite_border </span>
+                    <span class="material-icons heart-h"> favorite </span>
+                  </label>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-4 bg-white d-block d-lg-none">1</div>
-          <div class="col-4 bg-white">
-            <div class="card bg-primary">123</div>
+        <!-- -----latest card----- -->
+        <div class="row row-cols-1 row-cols-lg-3 gy-24">
+          <div class="col d-block d-lg-none">
+            <div class="card">
+              <div class="card-img-top">
+                <img src="/GuanZai/assets/長月燼明-a1318d93.png" alt="長月燼明" />
+              </div>
+              <div class="card-body px-0 px-lg-16">
+                <div class="mb-16 english fs-13 fw-lg-bold">
+                  <i class="bi bi-star-fill text-primary me-4"></i>
+                  <span class="border-end border-black-2 pe-8 me-8"> 4.9 </span
+                  >2023
+                </div>
+                <h3 class="card-title fs-20 fs-lg-26 fw-bold">長月燼明</h3>
+                <div class="card-link my-16 fs-12 flex-grow-1">
+                  <a href="#" class="btn-tags">#劇情</a>
+                  <a href="#" class="btn-tags">#愛情</a>
+                  <a href="#" class="btn-tags">#奇幻</a>
+                  <a href="#" class="btn-tags">#仙俠</a>
+                  <a href="#" class="btn-tags">#虐戀</a>
+                  <a href="#" class="btn-tags">羅云熙</a>
+                  <a href="#" class="btn-tags">白鹿</a>
+                  <a href="#" class="btn-tags">陳都靈</a>
+                  <a href="#" class="btn-tags">鄧為</a>
+                </div>
+                <p class="card-text fs-15 text-secondary text-opacity-70">
+                  為了解救被魔神澹台燼（羅云熙
+                  飾）統治折磨的世界，衡陽宗掌門之女黎蘇蘇（白鹿
+                  飾）孤注一擲，回到五百年前，化身葉家小女兒葉夕霧，阻止彼時尚未被邪念徹底侵蝕的景國質子澹台燼成為魔神。
+                </p>
+                <div class="d-flex mt-16">
+                  <a
+                    href="#"
+                    class="btn btn-outline-secondary d-flex justify-content-center align-items-center w-100 me-12 me-lg-16 p-0"
+                  >
+                    <span class="lh-xl">更多資訊</span
+                    ><i class="bi bi-arrow-right ms-8 fs-24"></i>
+                  </a>
+                  <input
+                    type="checkbox"
+                    class="btn-check"
+                    id="latest-like-2"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="btn btn-gold-3 btn-square btn-heart border-0"
+                    for="latest-like-2"
+                  >
+                    <span class="material-icons heart"> favorite_border </span>
+                    <span class="material-icons heart-h"> favorite </span>
+                  </label>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-4 bg-white">3</div>
-          <div class="col-4 bg-white">4</div>
+          <div class="col">
+            <div class="card">
+              <div class="card-img-top">
+                <img src="/GuanZai/assets/星漢燦爛-0281d859.jpg" alt="星漢燦爛" />
+              </div>
+              <div class="card-body px-0 px-lg-16">
+                <div class="mb-16 english fs-13 fw-lg-bold">
+                  <i class="bi bi-star-fill text-primary me-4"></i>
+                  <span class="border-end border-black-2 pe-8 me-8"> 4.9 </span
+                  >2022
+                </div>
+                <h3 class="card-title fs-20 fs-lg-26 fw-bold">
+                  星漢燦爛·月升滄海
+                </h3>
+                <div class="card-link my-16 fs-12 flex-grow-1">
+                  <a href="#" class="btn-tags">#劇情</a>
+                  <a href="#" class="btn-tags">#愛情</a>
+                  <a href="#" class="btn-tags">吳磊</a>
+                  <a href="#" class="btn-tags">趙露思</a>
+                  <a href="#" class="btn-tags">郭濤</a>
+                  <a href="#" class="btn-tags">曾梨</a>
+                </div>
+                <p class="card-text fs-15 text-secondary text-opacity-70">
+                  將軍凌不疑（吳磊
+                  飾）大捷歸來，在追查舊案的過程中結識了被罰在鄉野“思過”的留守兒童程少商（趙露思
+                  飾），只此一眼，便是萬年。
+                </p>
+                <div class="d-flex mt-16">
+                  <a
+                    href="#"
+                    class="btn btn-outline-secondary d-flex justify-content-center align-items-center w-100 me-12 me-lg-16 p-0"
+                  >
+                    <span class="lh-xl">更多資訊</span
+                    ><i class="bi bi-arrow-right ms-8 fs-24"></i>
+                  </a>
+                  <input
+                    type="checkbox"
+                    class="btn-check"
+                    id="latest-like-3"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="btn btn-gold-3 btn-square btn-heart border-0"
+                    for="latest-like-3"
+                  >
+                    <span class="material-icons heart"> favorite_border </span>
+                    <span class="material-icons heart-h"> favorite </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-img-top">
+                <img src="/GuanZai/assets/瑯琊榜3-f0935961.jpg" alt="瑯琊榜" />
+              </div>
+              <div class="card-body px-0 px-lg-16">
+                <div class="mb-16 english fs-13 fw-lg-bold">
+                  <i class="bi bi-star-fill text-primary me-4"></i>
+                  <span class="border-end border-black-2 pe-8 me-8"> 4.9 </span
+                  >2015
+                </div>
+                <h3 class="card-title fs-20 fs-lg-26 fw-bold">瑯琊榜</h3>
+                <div class="card-link my-16 fs-12 flex-grow-1">
+                  <a href="#" class="btn-tags">#劇情</a>
+                  <a href="#" class="btn-tags">#歷史</a>
+                  <a href="#" class="btn-tags">#權謀</a>
+                  <a href="#" class="btn-tags">#武俠</a>
+                  <a href="#" class="btn-tags">胡歌</a>
+                  <a href="#" class="btn-tags">劉濤</a>
+                  <a href="#" class="btn-tags">王凱</a>
+                  <a href="#" class="btn-tags">吳磊</a>
+                  <a href="#" class="btn-tags">陳龍</a>
+                  <a href="#" class="btn-tags">黃維德</a>
+                </div>
+                <p class="card-text fs-15 text-secondary text-opacity-70">
+                  十二年前七萬赤焰軍被奸人所害導致全軍覆沒，冤死梅嶺，只剩少帥林殊僥倖生還。十二年後林殊改頭換面化身“麒麟才子”梅長蘇（胡歌
+                  飾），建立江左盟，以“瑯琊榜”第一才子的身份重返帝都。
+                </p>
+                <div class="d-flex mt-16">
+                  <a
+                    href="#"
+                    class="btn btn-outline-secondary d-flex justify-content-center align-items-center w-100 me-12 me-lg-16 p-0"
+                  >
+                    <span class="lh-xl">更多資訊</span
+                    ><i class="bi bi-arrow-right ms-8 fs-24"></i>
+                  </a>
+                  <input
+                    type="checkbox"
+                    class="btn-check"
+                    id="latest-like-4"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="btn btn-gold-3 btn-square btn-heart border-0"
+                    for="latest-like-4"
+                  >
+                    <span class="material-icons heart"> favorite_border </span>
+                    <span class="material-icons heart-h"> favorite </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-img-top">
+                <img
+                  src="/GuanZai/assets/后宮甄嬛傳-6644143a.jpg"
+                  alt="后宮甄嬛傳"
+                />
+              </div>
+              <div class="card-body px-0 px-lg-16">
+                <div class="mb-16 english fs-13 fw-lg-bold">
+                  <i class="bi bi-star-fill text-primary me-4"></i>
+                  <span class="border-end border-black-2 pe-8 me-8"> 4.9 </span
+                  >2011
+                </div>
+                <h3 class="card-title fs-20 fs-lg-26 fw-bold">后宮．甄嬛傳</h3>
+                <div class="card-link my-16 fs-12 flex-grow-1">
+                  <a href="#" class="btn-tags">#劇情</a>
+                  <a href="#" class="btn-tags">#歷史</a>
+                  <a href="#" class="btn-tags">#宮鬥</a>
+                  <a href="#" class="btn-tags">#愛情</a>
+                  <a href="#" class="btn-tags">孫儷</a>
+                  <a href="#" class="btn-tags">陳建斌</a>
+                  <a href="#" class="btn-tags">蔡少芬</a>
+                  <a href="#" class="btn-tags">李東學</a>
+                  <a href="#" class="btn-tags">蔣欣</a>
+                </div>
+                <p class="card-text fs-15 text-secondary text-opacity-70">
+                  時為滿清雍正元年，結束了血腥的奪位之爭，新的君主（陳建斌
+                  飾）繼位，國泰民安，政治清明，但在一片祥和的表象之下，一股暗流蠢蠢欲動。尤其后宮，華妃（蔣欣
+                  飾）與皇后（蔡少芬 飾）分庭抗禮，各方勢力裹挾其中，凶險異常。
+                </p>
+                <div class="d-flex mt-16">
+                  <a
+                    href="#"
+                    class="btn btn-outline-secondary d-flex justify-content-center align-items-center w-100 me-12 me-lg-16 p-0"
+                  >
+                    <span class="lh-xl">更多資訊</span
+                    ><i class="bi bi-arrow-right ms-8 fs-24"></i>
+                  </a>
+                  <input
+                    type="checkbox"
+                    class="btn-check"
+                    id="latest-like-5"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="btn btn-gold-3 btn-square btn-heart border-0"
+                    for="latest-like-5"
+                  >
+                    <span class="material-icons heart"> favorite_border </span>
+                    <span class="material-icons heart-h"> favorite </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
