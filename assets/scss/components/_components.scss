@@ -7,7 +7,7 @@
 .btn-tags {
     border: 1px solid $black-2;
     border-radius: 96px;
-    padding: 12px;
+    padding: 8px 12px;
     font-size: 12px;
     display: inline-flex;
     margin-right: 4px;
@@ -63,13 +63,8 @@
 }
 
 .btn-heart {
-    width: 32px;
-    height: 32px;
-
-    @include lg() {
-        width: 56px;
-        height: 56px;
-    }
+    width: 56px;
+    height: 56px;
 }
 
 .heart {

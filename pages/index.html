@@ -360,7 +360,7 @@
             </h3>
           </div>
           <div class="col-12 col-lg-8">
-            <ul class="row list-unstyled gx-32">
+            <ul class="row list-unstyled gx-16 gx-lg-24">
               <li class="col-6 mb-40 mb-lg-64">
                 <div class="img-box mb-16 mb-lg-24">
                   <img
@@ -477,71 +477,280 @@
     </div>
     <!-- -----latest----- -->
     <div class="latest position-relative">
-      <div class="container pt-160">
+      <div class="container pt-80 pt-lg-160">
         <h2 class="mb-40 mb-lg-56 text-center text-lg-start">
           <p class="fs-40 fs-lg-56 fw-bold mb-8">最新開播</p>
           <p class="english fs-20 fs-lg-26 mb-0">Zueì Sin Kai Bò</p>
         </h2>
-        <div class="row justify-content-end mb-100 d-none d-lg-flex mt-140">
+        <!-- -----latest-banner----- -->
+        <div
+          class="row justify-content-end mb-100 d-none d-lg-flex mt-140 mb-100"
+        >
           <div class="col-4">
             <div class="card bg-white p-32">
-              <div class="mb-40">
-                <i class="bi bi-star-fill text-primary me-4"></i>
-                <span
-                  class="english fs-15 fw-bold border-end border-white-3 pe-8 me-8"
-                >
-                  4.9
-                </span>
-              </div>
-              <h3 class="fs-36 fw-bold">長月燼明</h3>
-              <div class="my-16 fs-12">
-                <a href="#" class="btn-tags">#劇情</a>
-                <a href="#" class="btn-tags">#愛情</a>
-                <a href="#" class="btn-tags">#奇幻</a>
-                <a href="#" class="btn-tags">#仙俠</a>
-                <a href="#" class="btn-tags">#虐戀</a>
-                <a href="#" class="btn-tags">羅云熙</a>
-                <a href="#" class="btn-tags">白鹿</a>
-                <a href="#" class="btn-tags">陳都靈</a>
-                <a href="#" class="btn-tags">鄧為</a>
-              </div>
-              <p class="fs-15 text-secondary text-opacity-70">
-                為了解救被魔神澹台燼（羅云熙
-                飾）統治折磨的世界，衡陽宗掌門之女黎蘇蘇（白鹿
-                飾）孤注一擲，回到五百年前，化身葉家小女兒葉夕霧，阻止彼時尚未被邪念徹底侵蝕的景國質子澹台燼成為魔神。
-              </p>
-              <div class="d-flex mt-40">
-                <a
-                  href="#"
-                  class="btn btn-outline-secondary d-flex justify-content-center align-items-center w-100 me-16 p-0"
-                >
-                  <span class="lh-xl">更多資訊</span
-                  ><i class="bi bi-arrow-right ms-8 fs-24"></i>
-                </a>
-                <input
-                  type="checkbox"
-                  class="btn-check"
-                  id="btn-check"
-                  autocomplete="off"
-                />
-                <label
-                  class="btn btn-gold-3 btn-square btn-heart border-0"
-                  for="btn-check"
-                >
-                  <span class="material-icons heart"> favorite_border </span>
-                  <span class="material-icons heart-h"> favorite </span>
-                </label>
+              <div class="card-body">
+                <div class="mb-40 english fs-15 fw-bold">
+                  <i class="bi bi-star-fill text-primary me-4"></i>
+                  <span class="border-end border-black-2 pe-8 me-8"> 4.9 </span
+                  >2023
+                </div>
+                <h3 class="card-title fs-36 fw-bold">長月燼明</h3>
+                <div class="my-16 fs-12">
+                  <a href="#" class="btn-tags">#劇情</a>
+                  <a href="#" class="btn-tags">#愛情</a>
+                  <a href="#" class="btn-tags">#奇幻</a>
+                  <a href="#" class="btn-tags">#仙俠</a>
+                  <a href="#" class="btn-tags">#虐戀</a>
+                  <a href="#" class="btn-tags">羅云熙</a>
+                  <a href="#" class="btn-tags">白鹿</a>
+                  <a href="#" class="btn-tags">陳都靈</a>
+                  <a href="#" class="btn-tags">鄧為</a>
+                </div>
+                <p class="card-text fs-15 text-secondary text-opacity-70">
+                  為了解救被魔神澹台燼（羅云熙
+                  飾）統治折磨的世界，衡陽宗掌門之女黎蘇蘇（白鹿
+                  飾）孤注一擲，回到五百年前，化身葉家小女兒葉夕霧，阻止彼時尚未被邪念徹底侵蝕的景國質子澹台燼成為魔神。
+                </p>
+                <div class="d-flex mt-40">
+                  <a
+                    href="#"
+                    class="btn btn-outline-secondary d-flex justify-content-center align-items-center w-100 me-16 p-0"
+                  >
+                    <span class="lh-xl">更多資訊</span
+                    ><i class="bi bi-arrow-right ms-8 fs-24"></i>
+                  </a>
+                  <input
+                    type="checkbox"
+                    class="btn-check"
+                    id="latest-like-1"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="btn btn-gold-3 btn-square btn-heart border-0"
+                    for="latest-like-1"
+                  >
+                    <span class="material-icons heart"> favorite_border </span>
+                    <span class="material-icons heart-h"> favorite </span>
+                  </label>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-4 bg-white d-block d-lg-none">1</div>
-          <div class="col-4 bg-white">
-            <div class="card bg-primary">123</div>
+        <!-- -----latest card----- -->
+        <div class="row row-cols-1 row-cols-lg-3">
+          <div class="col d-block d-lg-none">
+            <div class="card">
+              <div class="card-img-top">
+                <img src="/assets/images/長月燼明.png" alt="長月燼明" />
+              </div>
+              <div class="card-body px-0 px-lg-16">
+                <div class="mb-16 english fs-13 fw-lg-bold">
+                  <i class="bi bi-star-fill text-primary me-4"></i>
+                  <span class="border-end border-black-2 pe-8 me-8"> 4.9 </span
+                  >2023
+                </div>
+                <h3 class="card-title fs-20 fs-lg-26 fw-bold">長月燼明</h3>
+                <div class="card-link my-16 fs-12 flex-grow-1">
+                  <a href="#" class="btn-tags">#劇情</a>
+                  <a href="#" class="btn-tags">#愛情</a>
+                  <a href="#" class="btn-tags">#奇幻</a>
+                  <a href="#" class="btn-tags">#仙俠</a>
+                  <a href="#" class="btn-tags">#虐戀</a>
+                  <a href="#" class="btn-tags">羅云熙</a>
+                  <a href="#" class="btn-tags">白鹿</a>
+                  <a href="#" class="btn-tags">陳都靈</a>
+                  <a href="#" class="btn-tags">鄧為</a>
+                </div>
+                <p class="card-text fs-15 text-secondary text-opacity-70">
+                  為了解救被魔神澹台燼（羅云熙
+                  飾）統治折磨的世界，衡陽宗掌門之女黎蘇蘇（白鹿
+                  飾）孤注一擲，回到五百年前，化身葉家小女兒葉夕霧，阻止彼時尚未被邪念徹底侵蝕的景國質子澹台燼成為魔神。
+                </p>
+                <div class="d-flex mt-16">
+                  <a
+                    href="#"
+                    class="btn btn-outline-secondary d-flex justify-content-center align-items-center w-100 me-12 me-lg-16 p-0"
+                  >
+                    <span class="lh-xl">更多資訊</span
+                    ><i class="bi bi-arrow-right ms-8 fs-24"></i>
+                  </a>
+                  <input
+                    type="checkbox"
+                    class="btn-check"
+                    id="latest-like-2"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="btn btn-gold-3 btn-square btn-heart border-0"
+                    for="latest-like-2"
+                  >
+                    <span class="material-icons heart"> favorite_border </span>
+                    <span class="material-icons heart-h"> favorite </span>
+                  </label>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-4 bg-white">3</div>
-          <div class="col-4 bg-white">4</div>
+          <div class="col">
+            <div class="card">
+              <div class="card-img-top">
+                <img src="/assets/images/長月燼明.png" alt="長月燼明" />
+              </div>
+              <div class="card-body px-0 px-lg-16">
+                <div class="mb-16 english fs-13 fw-lg-bold">
+                  <i class="bi bi-star-fill text-primary me-4"></i>
+                  <span class="border-end border-black-2 pe-8 me-8"> 4.9 </span
+                  >2023
+                </div>
+                <h3 class="card-title fs-20 fs-lg-26 fw-bold">長月燼明</h3>
+                <div class="card-link my-16 fs-12 flex-grow-1">
+                  <a href="#" class="btn-tags">#劇情</a>
+                  <a href="#" class="btn-tags">#愛情</a>
+                  <a href="#" class="btn-tags">#奇幻</a>
+                  <a href="#" class="btn-tags">#仙俠</a>
+                  <a href="#" class="btn-tags">#虐戀</a>
+                  <a href="#" class="btn-tags">羅云熙</a>
+                  <a href="#" class="btn-tags">白鹿</a>
+                  <a href="#" class="btn-tags">陳都靈</a>
+                  <a href="#" class="btn-tags">鄧為</a>
+                </div>
+                <p class="card-text fs-15 text-secondary text-opacity-70">
+                  為了解救被魔神澹台燼（羅云熙
+                  飾）統治折磨的世界，衡陽宗掌門之女黎蘇蘇（白鹿
+                  飾）孤注一擲，回到五百年前，化身葉家小女兒葉夕霧，阻止彼時尚未被邪念徹底侵蝕的景國質子澹台燼成為魔神。
+                </p>
+                <div class="d-flex mt-16">
+                  <a
+                    href="#"
+                    class="btn btn-outline-secondary d-flex justify-content-center align-items-center w-100 me-12 me-lg-16 p-0"
+                  >
+                    <span class="lh-xl">更多資訊</span
+                    ><i class="bi bi-arrow-right ms-8 fs-24"></i>
+                  </a>
+                  <input
+                    type="checkbox"
+                    class="btn-check"
+                    id="latest-like-2"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="btn btn-gold-3 btn-square btn-heart border-0"
+                    for="latest-like-2"
+                  >
+                    <span class="material-icons heart"> favorite_border </span>
+                    <span class="material-icons heart-h"> favorite </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-img-top">
+                <img src="/assets/images/長月燼明.png" alt="長月燼明" />
+              </div>
+              <div class="card-body px-0 px-lg-16">
+                <div class="mb-16 english fs-13 fw-lg-bold">
+                  <i class="bi bi-star-fill text-primary me-4"></i>
+                  <span class="border-end border-black-2 pe-8 me-8"> 4.9 </span
+                  >2023
+                </div>
+                <h3 class="card-title fs-20 fs-lg-26 fw-bold">長月燼明</h3>
+                <div class="card-link my-16 fs-12 flex-grow-1">
+                  <a href="#" class="btn-tags">#劇情</a>
+                  <a href="#" class="btn-tags">#愛情</a>
+                  <a href="#" class="btn-tags">#奇幻</a>
+                  <a href="#" class="btn-tags">#仙俠</a>
+                  <a href="#" class="btn-tags">#虐戀</a>
+                  <a href="#" class="btn-tags">羅云熙</a>
+                  <a href="#" class="btn-tags">白鹿</a>
+                  <a href="#" class="btn-tags">陳都靈</a>
+                  <a href="#" class="btn-tags">鄧為</a>
+                </div>
+                <p class="card-text fs-15 text-secondary text-opacity-70">
+                  為了解救被魔神澹台燼（羅云熙
+                  飾）統治折磨的世界，衡陽宗掌門之女黎蘇蘇（白鹿
+                  飾）孤注一擲，回到五百年前，化身葉家小女兒葉夕霧，阻止彼時尚未被邪念徹底侵蝕的景國質子澹台燼成為魔神。
+                </p>
+                <div class="d-flex mt-16">
+                  <a
+                    href="#"
+                    class="btn btn-outline-secondary d-flex justify-content-center align-items-center w-100 me-12 me-lg-16 p-0"
+                  >
+                    <span class="lh-xl">更多資訊</span
+                    ><i class="bi bi-arrow-right ms-8 fs-24"></i>
+                  </a>
+                  <input
+                    type="checkbox"
+                    class="btn-check"
+                    id="latest-like-2"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="btn btn-gold-3 btn-square btn-heart border-0"
+                    for="latest-like-2"
+                  >
+                    <span class="material-icons heart"> favorite_border </span>
+                    <span class="material-icons heart-h"> favorite </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <div class="card-img-top">
+                <img src="/assets/images/長月燼明.png" alt="長月燼明" />
+              </div>
+              <div class="card-body px-0 px-lg-16">
+                <div class="mb-16 english fs-13 fw-lg-bold">
+                  <i class="bi bi-star-fill text-primary me-4"></i>
+                  <span class="border-end border-black-2 pe-8 me-8"> 4.9 </span
+                  >2023
+                </div>
+                <h3 class="card-title fs-20 fs-lg-26 fw-bold">長月燼明</h3>
+                <div class="card-link my-16 fs-12 flex-grow-1">
+                  <a href="#" class="btn-tags">#劇情</a>
+                  <a href="#" class="btn-tags">#愛情</a>
+                  <a href="#" class="btn-tags">#奇幻</a>
+                  <a href="#" class="btn-tags">#仙俠</a>
+                  <a href="#" class="btn-tags">#虐戀</a>
+                  <a href="#" class="btn-tags">羅云熙</a>
+                  <a href="#" class="btn-tags">白鹿</a>
+                  <a href="#" class="btn-tags">陳都靈</a>
+                  <a href="#" class="btn-tags">鄧為</a>
+                </div>
+                <p class="card-text fs-15 text-secondary text-opacity-70">
+                  為了解救被魔神澹台燼（羅云熙
+                  飾）統治折磨的世界，衡陽宗掌門之女黎蘇蘇（白鹿
+                  飾）孤注一擲，回到五百年前，化身葉家小女兒葉夕霧，阻止彼時尚未被邪念徹底侵蝕的景國質子澹台燼成為魔神。
+                </p>
+                <div class="d-flex mt-16">
+                  <a
+                    href="#"
+                    class="btn btn-outline-secondary d-flex justify-content-center align-items-center w-100 me-12 me-lg-16 p-0"
+                  >
+                    <span class="lh-xl">更多資訊</span
+                    ><i class="bi bi-arrow-right ms-8 fs-24"></i>
+                  </a>
+                  <input
+                    type="checkbox"
+                    class="btn-check"
+                    id="latest-like-2"
+                    autocomplete="off"
+                  />
+                  <label
+                    class="btn btn-gold-3 btn-square btn-heart border-0"
+                    for="latest-like-2"
+                  >
+                    <span class="material-icons heart"> favorite_border </span>
+                    <span class="material-icons heart-h"> favorite </span>
+                  </label>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
