@@ -762,11 +762,94 @@
     </div>
 
     <!-- -----rank----- -->
-    <div class="container pt-80 pt-lg-160">
+    <div class="rank container pt-80 pt-lg-160">
       <h2 class="text-center text-lg-start mb-24 mb-lg-48">
         <p class="fw-bold fs-20 fs-lg-26 mb-8">熱門排行</p>
         <p class="english fs-13 mb-0">Rè Mén Paí Háng</p>
       </h2>
+      <!-- -----rank card----- -->
+      <ul class="list-unstyled">
+        <li>
+          <h3>
+            <a href="#rank-hito">
+              人氣最高 <i class="bi bi-arrow-right ms-24"></i>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="296"
+                height="24"
+                viewBox="0 0 295 27"
+                fill="none"
+              >
+                <path
+                  d="M0.5 18.0264C10.9534 23.868 48.9942 31.4219 103.191 18.0264C176.366 -0.0598502 249.051 -4.86189 296.5 11.4992"
+                  stroke="#806D38"
+                  stroke-width="2"
+                />
+              </svg>
+            </a>
+          </h3>
+        </li>
+        <li>
+          <h3>
+            <a href="#rank-discuss">
+              討論最多 <i class="bi bi-arrow-right ms-24"></i>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="296"
+                height="24"
+                viewBox="0 0 295 27"
+                fill="none"
+              >
+                <path
+                  d="M0.5 18.0264C10.9534 23.868 48.9942 31.4219 103.191 18.0264C176.366 -0.0598502 249.051 -4.86189 296.5 11.4992"
+                  stroke="#806D38"
+                  stroke-width="2"
+                />
+              </svg>
+            </a>
+          </h3>
+        </li>
+        <li class="active">
+          <h3>
+            <a href="#rank-classical">
+              經典不敗 <i class="bi bi-arrow-right ms-24"></i>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="296"
+                height="24"
+                viewBox="0 0 295 27"
+                fill="none"
+              >
+                <path
+                  d="M0.5 18.0264C10.9534 23.868 48.9942 31.4219 103.191 18.0264C176.366 -0.0598502 249.051 -4.86189 296.5 11.4992"
+                  stroke="#806D38"
+                  stroke-width="2"
+                />
+              </svg>
+            </a>
+          </h3>
+        </li>
+        <li>
+          <h3>
+            <a href="#rank-award">
+              獲獎肯定 <i class="bi bi-arrow-right ms-24"></i>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="296"
+                height="24"
+                viewBox="0 0 295 27"
+                fill="none"
+              >
+                <path
+                  d="M0.5 18.0264C10.9534 23.868 48.9942 31.4219 103.191 18.0264C176.366 -0.0598502 249.051 -4.86189 296.5 11.4992"
+                  stroke="#806D38"
+                  stroke-width="2"
+                />
+              </svg>
+            </a>
+          </h3>
+        </li>
+      </ul>
     </div>
 
     <!-- -----update----- -->
@@ -824,6 +907,10 @@
       $(document).ready(function () {
         $(".burger").click(function (event) {
           $(".burger img").toggleClass("d-none");
+        });
+        $(".rank li").click(function (event) {
+          $(".rank li").removeClass("active");
+          $(this).addClass("active");
         });
       });
     </script>
@@ -930,5 +1017,13 @@
         },
       });
     </script>
+    <!-- <script>
+      var swiper = new Swiper(".rank-card", {
+        effect: "cards",
+        grabCursor: true,
+        perSlideOffset: 8,
+        perSlideRotate: 2,
+      });
+    </script> -->
   </body>
 </html>

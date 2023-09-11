@@ -150,3 +150,61 @@
     overflow: hidden;
   }
 }
+
+// -----rank card-----
+.rank {
+  ul {
+    li {
+      padding-left: 32px;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      border-left: 2px solid $black-2;
+      @include zoom(.2s);
+
+      &:hover {
+        border-left: 2px solid $primary;
+        padding-left: 64px;
+      }
+
+      &:hover a {
+        color: $primary;
+      }
+
+      &:hover svg {
+        display: block;
+      }
+    }
+
+    .active {
+      border-left: 2px solid $primary;
+      padding-left: 64px;
+
+      a {
+        color: $primary;
+      }
+
+      svg {
+        display: block;
+      }
+    }
+
+    a {
+      font-size: 64px;
+      font-weight: bold;
+      color: $black-2;
+      position: relative;
+      @include zoom(.2s);
+    }
+
+    svg {
+      stroke-width: 2px;
+      position: absolute;
+      transform: translate(-50%, 0);
+      bottom: 0;
+      left: 35%;
+      display: none;
+      @include zoom(.2s);
+    }
+
+  }
+}
