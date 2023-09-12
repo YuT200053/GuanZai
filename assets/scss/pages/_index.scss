@@ -153,69 +153,122 @@
 
 // -----rank card-----
 .rank {
+
   ul {
-    li {
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+
+    @include lg() {
+      position: static;
+    }
+  }
+
+  .col-12:nth-child(1) {
+    height: 175px;
+  }
+
+  li {
+    padding-bottom: 12px;
+    padding-left: 22px;
+    padding-right: 22px;
+    border-bottom: 2px solid $black-2;
+    @include zoom(.2s);
+
+    @include lg() {
       padding-left: 32px;
       padding-top: 16px;
       padding-bottom: 16px;
       border-left: 2px solid $black-2;
-      @include zoom(.2s);
+      border-bottom: 0;
+    }
 
-      &:hover {
+    &:hover {
+      border-bottom: 2px solid $primary;
+      cursor: pointer;
+
+      @include lg() {
         border-left: 2px solid $primary;
+        border-bottom: 0;
         padding-left: 64px;
       }
+    }
 
-      &:hover a {
-        color: $primary;
-      }
+    &:hover h3 {
+      color: $primary;
+    }
 
+    @include lg() {
       &:hover svg {
         display: block;
       }
     }
-
-    .active {
-      border-left: 2px solid $primary;
-      padding-left: 64px;
-
-      a {
-        color: $primary;
-      }
-
-      svg {
-        display: block;
-      }
-    }
-
-    a {
-      font-size: 64px;
-      font-weight: bold;
-      color: $black-2;
-      position: relative;
-      @include zoom(.2s);
-    }
-
-    svg {
-      stroke-width: 2px;
-      position: absolute;
-      transform: translate(-50%, 0);
-      bottom: 0;
-      left: 35%;
-      display: none;
-      @include zoom(.2s);
-    }
   }
+
+
+
+  h3 {
+    font-weight: bold;
+    color: $black-2;
+    position: relative;
+    @include zoom(.2s);
+  }
+
+  svg {
+    stroke-width: 2px;
+    position: absolute;
+    transform: translate(-50%, 0);
+    bottom: 0;
+    left: 35%;
+    display: none;
+    @include zoom(.2s);
+  }
+
 
   .img-box {
     display: block;
-    width: 560px;
-    height: 600px;
-    transform: translate(-50%, 0);
+    width: 280px;
+    height: 300px;
+    transform: translate(-50%, -50%);
     left: 50%;
+    top: 50%;
+
+    @include md() {
+      width: 80%;
+      height: 500px;
+    }
+
+    @include lg() {
+      transform: translate(-50%, 0);
+      top: 0;
+      width: 560px;
+      height: 600px;
+    }
 
     img {
       width: 100%;
+    }
+  }
+
+  .active {
+    border-bottom: 2px solid $primary;
+
+    @include lg() {
+      border-left: 2px solid $primary;
+      border-bottom: 0;
+      padding-left: 64px;
+    }
+
+    h3 {
+      color: $primary;
+    }
+
+    @include lg() {
+      svg {
+        display: block;
+      }
     }
   }
 
@@ -233,7 +286,11 @@
 
   .z-4 {
     z-index: 4;
-    transform: translate(-50%, 0) rotate(-4deg);
+    transform: translate(-50%, -50%) rotate(-4deg);
+
+    @include lg() {
+      transform: translate(-50%, 0) rotate(-4deg);
+    }
   }
 
   .z-3 {
@@ -242,11 +299,27 @@
 
   .z-2 {
     z-index: 2;
-    transform: translate(-50%, 0) rotate(4deg);
+    transform: translate(-50%, -50%) rotate(4deg);
+
+    @include lg() {
+      transform: translate(-50%, 0) rotate(4deg);
+    }
   }
 
   .z-1 {
     z-index: 1;
-    transform: translate(-50%, 0) rotate(8deg);
+    transform: translate(-50%, -50%) rotate(8deg);
+
+    @include lg() {
+      transform: translate(-50%, 0) rotate(8deg);
+    }
+  }
+
+  &-img {
+    height: 400px;
+
+    @include md() {
+      height: 600px;
+    }
   }
 }
