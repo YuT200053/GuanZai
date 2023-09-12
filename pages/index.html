@@ -763,7 +763,7 @@
 
     <!-- -----rank----- -->
     <div class="rank container pt-80 pt-lg-160 d-flex position-relative mb-140">
-      <div class="me-100">
+      <div class="col-5">
         <h2 class="text-center text-lg-start mb-24 mb-lg-48">
           <p class="fw-bold fs-20 fs-lg-26 mb-8">熱門排行</p>
           <p class="english fs-13 mb-0">Rè Mén Paí Háng</p>
@@ -853,18 +853,18 @@
         </ul>
       </div>
       <!-- -----rank img----- -->
-      <div class="position-relative flex-grow-1">
-        <a href="#" class="img-box position-absolute">
-          <img src="/assets/images/drama/瑯琊榜3.jpg" alt="瑯琊榜" />
+      <div class="col-7 position-relative flex-grow-1">
+        <a href="#" class="img-box position-absolute z-1">
+          <img src="/assets/images/drama/長月燼明.jpg" alt="長月燼明" />
         </a>
-        <a href="#" class="img-box position-absolute">
-          <img src="/assets/images/drama/后宮甄嬛傳.jpg" alt="后宮甄嬛傳" />
-        </a>
-        <a href="#" class="img-box position-absolute">
+        <a href="#" class="img-box position-absolute z-2">
           <img src="/assets/images/drama/星漢燦爛.jpg" alt="星漢燦爛" />
         </a>
-        <a href="#" class="img-box position-absolute">
-          <img src="/assets/images/drama/長月燼明.jpg" alt="長月燼明" />
+        <a href="#" class="img-box position-absolute z-3">
+          <img src="/assets/images/drama/后宮甄嬛傳.jpg" alt="后宮甄嬛傳" />
+        </a>
+        <a href="#" class="img-box position-absolute z-4">
+          <img src="/assets/images/drama/瑯琊榜3.jpg" alt="瑯琊榜" />
         </a>
       </div>
     </div>
@@ -930,6 +930,31 @@
         $(".rank li").click(function (event) {
           $(".rank li").removeClass("active");
           $(this).addClass("active");
+          $(".rank a").removeClass("z-1 z-2 z-3 z-4");
+        });
+        $(".rank li:nth-child(1)").click(function (event) {
+          $(".rank a:nth-child(1)").addClass("z-4");
+          $(".rank a:nth-child(2)").addClass("z-3");
+          $(".rank a:nth-child(3)").addClass("z-2");
+          $(".rank a:nth-child(4)").addClass("z-1");
+        });
+        $(".rank li:nth-child(2)").click(function (event) {
+          $(".rank a:nth-child(2)").addClass("z-4");
+          $(".rank a:nth-child(3)").addClass("z-3");
+          $(".rank a:nth-child(4)").addClass("z-2");
+          $(".rank a:nth-child(1)").addClass("z-1");
+        });
+        $(".rank li:nth-child(3)").click(function (event) {
+          $(".rank a:nth-child(4)").addClass("z-4");
+          $(".rank a:nth-child(1)").addClass("z-3");
+          $(".rank a:nth-child(2)").addClass("z-2");
+          $(".rank a:nth-child(3)").addClass("z-1");
+        });
+        $(".rank li:nth-child(4)").click(function (event) {
+          $(".rank a:nth-child(3)").addClass("z-4");
+          $(".rank a:nth-child(4)").addClass("z-3");
+          $(".rank a:nth-child(1)").addClass("z-2");
+          $(".rank a:nth-child(2)").addClass("z-1");
         });
       });
     </script>

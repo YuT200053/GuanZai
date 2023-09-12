@@ -219,22 +219,34 @@
     }
   }
 
-  .img-box:nth-child(1) {
+  // .img-box:nth-child(1) {
+  //   transform: translate(-50%, 0) rotate(8deg);
+  // }
+
+  // .img-box:nth-child(2) {
+  //   transform: translate(-50%, 0) rotate(4deg);
+  // }
+
+  // .img-box:nth-child(4) {
+  //   transform: translate(-50%, 0) rotate(-4deg);
+  // }
+
+  .z-4 {
+    z-index: 4;
     transform: translate(-50%, 0) rotate(-4deg);
-    z-index: 1;
   }
 
-  .img-box:nth-child(3) {
+  .z-3 {
+    z-index: 3;
+  }
+
+  .z-2 {
+    z-index: 2;
     transform: translate(-50%, 0) rotate(4deg);
-    z-index: -1;
-  }
-
-  .img-box:nth-child(4) {
-    transform: translate(-50%, 0) rotate(8deg);
-    z-index: -2;
   }
 
   .z-1 {
     z-index: 1;
+    transform: translate(-50%, 0) rotate(8deg);
   }
 }
