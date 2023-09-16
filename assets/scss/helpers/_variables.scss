@@ -700,9 +700,11 @@ $font-sizes: (
   20: $font-size-base * 1.25,
   24: $font-size-base * 1.5,
   26: 26px,
+  28: $font-size-base * 1.75,
   32: $font-size-base * 2,
   36: $font-size-base * 2.25,
   40: $font-size-base * 2.5,
+  48: $font-size-base * 3,
   56: $font-size-base * 3.5,
   64: $font-size-base * 4,
   ) !default;

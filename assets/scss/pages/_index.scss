@@ -18,7 +18,6 @@
 
 // -----marquee-----
 .marquee {
-
   .swiper {
     &-wrapper {
       transition-timing-function: linear;
@@ -54,7 +53,8 @@
   }
 
   .swiper-slide {
-    width: 312px;
+    max-width: 312px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -65,7 +65,10 @@
 
     @include lg() {
       max-width: 1296px;
-      width: 100%;
+    }
+
+    @include md() {
+      max-width: 720px;
     }
   }
 
