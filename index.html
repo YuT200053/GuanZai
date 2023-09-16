@@ -14,8 +14,8 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <script type="module" crossorigin src="/GuanZai/assets/main-99717a7a.js"></script>
-    <link rel="stylesheet" href="/GuanZai/assets/main-9985a155.css">
+    <script type="module" crossorigin src="/GuanZai/assets/main-ac7b19a2.js"></script>
+    <link rel="stylesheet" href="/GuanZai/assets/main-337ce060.css">
   </head>
   <body>
     <header class="bg-white border-bottom border-1 border-black-2 fixed-top">
@@ -923,7 +923,7 @@
     <!-- -----rank----- -->
     <div class="rank container pt-80 pt-lg-160 mb-32 mb-lg-140">
       <div class="row">
-        <div class="col-12 col-lg-5">
+        <div class="col-12 col-lg-4 col-xl-5">
           <h2 class="text-center text-lg-start mb-32 mb-lg-48">
             <p class="fw-bold fs-26 mb-8">熱門排行</p>
             <p class="english fs-13 mb-0">Rè Mén Paí Háng</p>
@@ -931,7 +931,7 @@
           <!-- -----rank card----- -->
           <ul class="list-unstyled d-flex d-lg-block mb-32 mb-lg-0">
             <li class="flex-shrink-0">
-              <h3 class="fs-32 fs-lg-64">
+              <h3 class="fs-32 fs-xl-64">
                 人氣最高
                 <i class="bi bi-arrow-right ms-24 d-none d-lg-inline"></i>
                 <svg
@@ -950,7 +950,7 @@
               </h3>
             </li>
             <li class="flex-shrink-0">
-              <h3 class="fs-32 fs-lg-64">
+              <h3 class="fs-32 fs-xl-64">
                 討論最多
                 <i class="bi bi-arrow-right ms-24 d-none d-lg-inline"></i>
                 <svg
@@ -969,7 +969,7 @@
               </h3>
             </li>
             <li class="active flex-shrink-0">
-              <h3 class="fs-32 fs-lg-64">
+              <h3 class="fs-32 fs-xl-64">
                 經典不敗
                 <i class="bi bi-arrow-right ms-24 d-none d-lg-inline"></i>
                 <svg
@@ -988,7 +988,7 @@
               </h3>
             </li>
             <li class="flex-shrink-0">
-              <h3 class="fs-32 fs-lg-64">
+              <h3 class="fs-32 fs-xl-64">
                 獲獎肯定
                 <i class="bi bi-arrow-right ms-24 d-none d-lg-inline"></i>
                 <svg
@@ -1009,7 +1009,9 @@
           </ul>
         </div>
         <!-- -----rank img----- -->
-        <div class="rank-img col-12 col-lg-7 position-relative flex-grow-1">
+        <div
+          class="rank-img col-12 col-lg-8 col-xl-7 position-relative flex-grow-1"
+        >
           <a href="#" class="img-box position-absolute z-1">
             <img src="/GuanZai/assets/長月燼明-37ff4b56.jpg" alt="長月燼明" />
           </a>
@@ -1212,7 +1214,7 @@
     <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- -----jquery----- -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    <!-- -----jquery-burger----- -->
+    <!-- -----jquery-burger&rank-card----- -->
     <script>
       $(document).ready(function () {
         $(".burger").click(function (event) {
@@ -1251,26 +1253,7 @@
     </script>
     <!-- -----swiper----- -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!-- -----swiper-marquee----- -->
-    <!-- <script>
-      var swiper = new Swiper(".marquee", {
-        spaceBetween: 48,
-        allowTouchMove: false,
-        slidesPerView: "auto",
-        speed: 25000,
-        loop: true,
-        autoplay: {
-          delay: 0,
-          disableOnInteraction: false,
-        },
-        on: {
-          slideChangeTransitionEnd: function (e) {
-            swiper.update(true); //更新置中圖片
-            swiper.autoplay.start(); //更新補上重新自動輪播
-          },
-        },
-      });
-    </script> -->
+    <!-- -----swiper-banner-marquee----- -->
     <script>
       function initMarquee(swiper) {
         var marquee =
@@ -1283,15 +1266,18 @@
           spaceBetween: 48,
           allowTouchMove: false,
           slidesPerView: "auto",
-          speed: 10000,
+          speed: 20000,
           loop: true,
           autoplay: {
             delay: 0,
             disableOnInteraction: false,
           },
           breakpoints: {
-            375: {
+            992: {
               speed: 20000,
+            },
+            375: {
+              speed: 10000,
             },
           },
         });
@@ -1325,30 +1311,5 @@
         },
       });
     </script>
-    <!-- -----swiper-banner----- -->
-    <!-- <script>
-      var swiper = new Swiper(".banner", {
-        slidesPerView: 7,
-        // loop: true,
-        spaceBetween: 16,
-        centeredSlides: true,
-        // slidesPerView: 1,
-        // allowTouchMove: false,
-        navigation: {
-          nextEl: ".page-next",
-          prevEl: ".page-pre",
-        },
-        autoplay: {
-          delay: 8000,
-          disableOnInteraction: false,
-        },
-        breakpoints: {
-          375: {
-            slidesPerView: "auto",
-            allowTouchMove: true,
-          },
-        },
-      });
-    </script> -->
   </body>
 </html>
